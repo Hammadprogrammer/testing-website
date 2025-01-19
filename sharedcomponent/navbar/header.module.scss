@@ -1,0 +1,205 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 50;
+}
+
+.topBar {
+  background-color: #000;
+  color: #fff;
+  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  
+  @media (max-width: 992px) {
+    font-size: 0.75rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.6rem;
+  }
+
+  @media (max-width: 576px) {
+    font-size: 0.6rem;
+    padding: 0.2rem 0.5rem;
+  }
+}
+
+.topBarContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact,
+.location {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.navBar {
+  border-bottom: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.navBarContent {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo img {
+  width: 100px !important;
+  // transition: width 0.3s ease;
+}
+
+.navLinks {
+  display: flex;
+  gap: 2rem;
+  font-size: 1rem;
+  font-weight: 500;
+
+  @media (max-width: 992px) {
+    font-size: 0.9rem;
+    gap: 1.5rem;
+  }
+
+  @media (max-width: 768px) {
+    display: none; /* Hide navigation links on small screens */
+  }
+}
+
+.navLink {
+  color: #333;
+  text-decoration: none;
+  // transition: color 0.3s;
+
+  &:hover {
+    color: #007bff;
+  }
+}
+
+.socialIcons {
+  display: flex;
+  gap: 1rem;
+  font-size: 1.25rem;
+
+  a {
+    color: #333;
+    // transition: color 0.3s;
+
+    &:hover {
+      color: #007bff;
+    }
+  }
+
+  @media (max-width: 768px) {
+    display: none; /* Hide social icons on small screens */
+  }
+}
+
+/* Hamburger Icon on the Right */
+.hamburger {
+  display: none;
+  cursor: pointer;
+  gap: 5px;
+  flex-direction: column;
+  
+  div {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    position: absolute;
+    right: 1rem; /* Position it on the right side */
+    top: 50px; /* Adjusted to be below the logo */
+  }
+}
+
+/* Left Sidebar for Mobile */
+.navDrawer {
+  position: fixed;
+  top: 0;
+  left: -300px; /* Initially hidden off the left side */
+  width: 250px;
+  height: 100%;
+  background-color: #fff;
+  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+  z-index: 100;
+  // transition: left 0.3s ease-in-out;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.navDrawer.open {
+  left: 0; /* Slide in when open */
+}
+
+.navDrawer .navLink {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1rem;
+  color: #333;
+  // transition: color 0.3s;
+}
+
+.navDrawer .navLink:hover {
+  color: #007bff;
+}
+
+@media (max-width: 992px) {
+  .logo img {
+    width: 80px !important;
+  }
+  .navLinks {
+    font-size: 0.9rem;
+    gap: 1.5rem;
+  }
+  .socialIcons {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .logo img {
+    width: 90px !important;
+  }
+  .navLinks {
+    font-size: 0.8rem;
+    gap: 1rem;
+  }
+  .socialIcons {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  
+  .logo img {
+    width: 60px !important;
+    
+  }
+  .navLinks {
+    font-size: 0.75rem;
+    gap: 1rem;
+  }
+  .socialIcons {
+    font-size: 0.8rem;
+    position: absolute;
+    right: 1rem; /* Position it on the right side */
+    top: 50px;
+  }
+}

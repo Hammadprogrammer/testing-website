@@ -1,0 +1,109 @@
+$primary-color: #1375ad;
+$icon-color: #6c757d;
+$social-color: #007bff;
+
+.contactInfo {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  padding-left: 4vw;
+  gap: 30px;
+
+  background-color: #f7f8fa;
+  color: #4a4a4a;
+
+  .logo,
+  .details,
+  .contactInfoSection,
+  .social {
+    flex: 1 1 22%;  // Allow each section to take 22% of the width with space between them
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 300px;  // Set a max-width for each section
+  }
+
+  .logo {
+    h1 {
+      font-size: 28px;
+      color: $primary-color;
+      line-height: 1.4;
+    }
+
+    p {
+      font-size: 16px;
+      line-height: 1.6;
+    }
+  }
+
+  .office, .contact {
+    display: flex;
+    line-height: 20px;
+    align-items: center;
+    gap: 10px;
+
+    .icon {
+      margin-bottom: 0;
+      font-size: 20px;
+      color: $icon-color;
+    }
+
+    a {
+      color: $primary-color;
+      text-decoration: none;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  .social {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    .socialItem {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 16px;
+
+      .socialIcon {
+        font-size: 22px;
+        color: $social-color;
+        transition: transform 0.3s, color 0.3s;
+
+        &:hover {
+          color: darken($social-color, 10%);
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  /* Adjustments for very small screens (below 768px) */
+  @media (max-width: 768px) {
+    padding: 20px;
+    padding-left: 5vw;
+    padding-right: 5vw;
+  }
+
+  /* Responsive Adjustments for screens below 992px */
+  @media (max-width: 992px) {
+    .contactInfo {
+      flex-direction: column;
+      padding-left: 5vw;
+      padding-right: 5vw;
+    }
+
+    .logo,
+    .details,
+    .contactInfoSection,
+    .social {
+      flex: 1 1 100%;  // Full width for each section on small screens
+      max-width: none;  // Remove max-width for mobile
+    }
+  }
+}

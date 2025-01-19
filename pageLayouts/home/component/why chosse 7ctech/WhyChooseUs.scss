@@ -1,0 +1,71 @@
+.why-choose-us-section {
+    background-color: #f9f9f9;
+    padding: 6rem 3rem; // Increase padding for better spacing
+  
+    .container {
+      max-width: 1300px;
+      margin: 0 auto;
+      text-align: center;
+  
+      h2 {
+        font-size: 3rem; // Larger font size for the heading
+        margin-bottom: 3rem; // More spacing below the heading
+        font-weight: bold;
+        color:  black;
+  
+        span {
+          color: #69a6da;
+          font-weight: 700;      }
+      }
+  
+      .features-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); // Increase minimum card width0
+        gap: 3rem; // Larger spacing between cards
+  
+        .feature-card {
+          background-color: #fff;
+          border-radius: 12px; // Slightly rounder corners
+          padding: 2.5rem; // Increase padding inside the card
+          box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); // Stronger shadow effect
+          text-align: center;
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+  
+          &:hover {
+            transform: translateY(-8px); // Slightly higher lift on hover
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); // Stronger hover shadow
+          }
+  
+          .icon-box {
+            background-color: #e6f7ff; // Light blue background
+            border-radius: 50%;
+            width: 120px; // Larger icon container
+            height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 2rem; // Increase margin below the icon
+  
+            img {
+              width: 60%; // Scale the image proportionally
+              height: auto;
+            }
+          }
+  
+          h3 {
+            font-size: 1.5rem; // Increase title font size
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color:  black;
+          }
+  
+          p {
+            font-size: 1rem; // Slightly larger paragraph font size
+            color: #666;
+            line-height: 1.8; // More line spacing for readability
+          }
+        }
+      }
+    }
+  }
+  

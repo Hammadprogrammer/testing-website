@@ -1,0 +1,94 @@
+.coreValues {
+    width: 100%;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #ffffff;  /* New background color for the section */
+    
+    /* Optional: Styling for the paragraphs */
+    P {
+      font-size: 15px;
+      line-height: 1.5;
+      max-width: 450px;
+      margin-left: 150px;
+      margin-top: 20px;
+      font-family: sans-serif;
+    }
+  
+    .title {
+      text-align: left;
+      font-size: 30px;
+      font-weight: bolder;
+      color: #2b2b2b;
+      margin-top: 100px;
+      margin-left: 150px;
+    }
+  
+    .section {
+      display: flex;
+      margin-top: 4rem;
+      padding-bottom: 1rem;
+  
+      .icon {
+        margin-top: 20px;
+        margin-left: 20px;
+        background-color: #ffffff;  /* Yellow background for the icon */
+        color: #d2c633;  /* White color for the icon */
+        font-size: 1.5rem;  /* Icon size */
+        border-radius: 50%;  /* Round shape */
+        width: 50px;  /* Set the width to 50px */
+        height: 50px;  /* Set the height to 50px */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+  
+        svg {
+          font-size: 1.5rem; /* Ensure the FontAwesome icon matches the size */
+          width: 100%; /* Make icon fill the circle */
+          height: 100%; /* Ensure icon fits inside the circle */
+        }
+      }
+  
+      h2 {
+        font-size: 16px;
+        font-weight: bold;
+        margin-bottom: 0.5rem;
+        margin-left: 150px;
+        font-family: Arial, sans-serif;
+      }
+  
+      p {
+        font-size: 15px;
+        line-height: 1.5;
+        max-width: 450px;
+        margin-left: 150px;
+        margin-top: 20px;
+        font-family: sans-serif;
+      }
+    }
+  
+    // 768 screen size 
+    @media (max-width: 768px) {
+      .title, .section h2, .section p {
+        margin-left: 0;
+        text-align: left;
+      }
+  
+      .section {
+        flex-direction: row;
+        align-items: center;
+      }
+  
+      .icon {
+        margin-left: 0;
+        margin-right: 10px;
+        margin-bottom: 0;
+      }
+  
+      P {
+        margin-left: 0;
+        margin-right: 0;
+      }
+    }
+  }
+  

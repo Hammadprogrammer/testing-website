@@ -1,0 +1,135 @@
+.main {
+  height: 100%;
+  width: 100%;
+  padding: 20px;
+}
+
+.heading {
+  font-family: sans-serif;
+  color: #222222;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 50px;
+  font-size: 32px;
+}
+
+.span {
+  color: #69a6da;
+  font-weight: 700;
+}
+
+.carouselContainer {
+  position: relative;
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.carouselContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.icon {
+  font-size: 40px;
+  color: #333;
+  margin-top: 20px;
+}
+
+.text {
+  margin-top: 50px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #555;
+  font-weight: normal;
+}
+
+.textBottom {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #777;
+}
+
+.indicatorWrapper {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: center;
+  bottom: 10px;
+}
+
+.indicator {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 5px;
+  background-color: #ccc;
+  cursor: pointer;
+}
+
+.indicator.active {
+  background-color: black;
+}
+
+.carouselControls {
+  position: absolute;
+  top: 60%;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  transform: translateY(-50%);
+}
+
+.prevButton,
+.nextButton {
+  background: transparent;
+  border: none;
+  font-size: 30px;
+  color: #333;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.prevButton:hover,
+.nextButton:hover {
+  color: #000;
+}
+
+.prevButton i,
+.nextButton i {
+  font-size: 30px;
+  transition: transform 0.3s ease;
+}
+
+.prevButton:hover i,
+.nextButton:hover i {
+  transform: scale(1.1);
+}
+
+.prevButton:active,
+.nextButton:active {
+  transform: scale(0.95);
+}
+
+.ceo {
+  color: #7AA641;
+  font-family: sans-serif;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Hide the previous and next buttons on screens smaller than 992px */
+@media (max-width: 991px) {
+  .prevButton,
+  .nextButton {
+    display: none;
+  }
+}

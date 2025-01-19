@@ -1,0 +1,176 @@
+.main {
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .header {
+    text-align: center;
+    color: black;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+  
+  /* Flexbox layout for the items */
+  .row {
+    display: flex;
+    flex-direction: row; 
+    justify-content: center;
+    align-items: center; 
+    gap: 40px;
+    flex-wrap: wrap; 
+    width: 100%;
+    margin-left: 200px; 
+  }
+  
+  /* Style for each item (number + text) */
+  .item {
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+    margin-bottom: 20px; 
+    width: 100%; 
+  }
+  
+  /* Text styling for each item */
+  .paraOne, .paraTwo, .paraThree {
+    font-size: 25.5px;
+    text-align: left;
+    margin-left: 20px; 
+    color: black;
+    margin-top: 10px;
+  }
+  
+  .paraOne {
+    color: rgb(155, 76, 228);
+  }
+  
+  .paraTwo {
+    color: rgb(79, 103, 225);
+  }
+  
+  .paraThree {
+    color: rgb(0, 188, 212);
+  }
+  
+  /* Circle styling */
+  .circleOne, .circleTwo, .circleThree {
+    color: white;
+    font-size: 15px;
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px; 
+    border-radius: 50%; 
+    padding: 10px;
+    text-align: center;
+    margin-top: 10px;
+  }
+  
+  .circleOne {
+    background-color: rgb(155, 76, 228);
+  }
+  
+  .circleTwo {
+    background-color: rgb(79, 103, 225);
+  }
+  
+  .circleThree {
+    background-color: rgb(0, 188, 212);
+  }
+  
+  /* Responsive Design */
+  
+  /* For screens smaller than 992px (tablets and smaller devices) */
+  @media (max-width: 992px) {
+    .row {
+      flex-direction: column; /* Stack items vertically */
+      align-items: flex-start; /* Align items to the left */
+      gap: 30px; /* Reduce gap between items */
+      margin-left: 0; /* Remove left margin */
+    }
+  
+    .item {
+      flex-direction: row; /* Keep number and text in a row */
+      justify-content: flex-start; /* Align items to the left */
+      margin-left: 0;
+    }
+  
+    .circleOne, .circleTwo, .circleThree {
+      width: 45px; /* Slightly smaller circles */
+      height: 45px;
+      font-size: 13px; 
+    }
+  
+    .paraOne, .paraTwo, .paraThree {
+      font-size: 22px; /* Smaller font size for text */
+    }
+  
+    .header {
+      font-size: 22px; /* Slightly smaller header text */
+    }
+  }
+  
+  /* For screens smaller than 768px (mobile devices) */
+  @media (max-width: 768px) {
+    .header {
+      font-size: 20px; /* Smaller header font size */
+    }
+  
+    .circleOne, .circleTwo, .circleThree {
+      width: 40px; /* Smaller circles for mobile */
+      height: 40px;
+      font-size: 12px; /* Smaller font size for circles */
+    }
+  
+    .paraOne, .paraTwo, .paraThree {
+      font-size: 18px; /* Smaller text on mobile */
+    }
+  
+    .item {
+      margin-bottom: 15px; /* Reduce space between items */
+    }
+  
+    .row {
+      gap: 20px; /* Reduce gap between items on mobile */
+    }
+  }
+  
+  /* For screens smaller than 480px (very small screens) */
+  @media (max-width: 480px) {
+    .header {
+      font-size: 18px; /* Even smaller header font size */
+    }
+  
+    .circleOne, .circleTwo, .circleThree {
+      width: 35px; /* Even smaller circles */
+      height: 35px;
+      font-size: 10px; /* Even smaller font size for circles */
+    }
+  
+    .paraOne, .paraTwo, .paraThree {
+      font-size: 16px; /* Smaller text for very small screens */
+    }
+  
+    .row {
+      gap: 15px; /* Even smaller gap between items */
+    }
+  
+    .item {
+      margin-bottom: 10px; /* Reduce margin further */
+    }
+  }
+  
+  /* Slightly move the 3rd text to the right */
+  @media (max-width: 768px) {
+    .paraThree {
+      margin-left: 10px; /* Move the 3rd text slightly to the right */
+    }
+  }
+  

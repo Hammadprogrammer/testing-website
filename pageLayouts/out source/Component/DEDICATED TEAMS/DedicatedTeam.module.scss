@@ -1,0 +1,153 @@
+.container {
+    text-align: center;
+    padding: 2rem;
+    font-family: Arial, sans-serif;
+    background-color: white;
+  }
+  
+  .heading {
+    font-size: 25.5px;
+    font-family:  sans-serif;
+    margin-bottom: 2rem;
+    color: #333;
+  }
+  
+  .table {
+    display: table;
+    width: 80%;
+    border-collapse: collapse;
+    margin: 0 auto;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .row {
+    display: table-row;
+  }
+  
+  .cell {
+    display: table-cell;
+    border: 1px solid #ddd;
+    padding: 1rem;
+    vertical-align: top;
+    text-align: center;
+    color: rgb(64, 62, 62);
+  }
+  
+  .header {
+    font-weight: bold;
+    text-align: center;
+    color: white !important;
+    background-color: rgb(155, 76, 228) !important;
+  }
+  
+  .header1 {
+    font-weight: bold;
+    text-align: center;
+    color: white !important;
+    background-color: rgb(79, 103, 225);
+  }
+  
+  .header2 {
+    font-weight: bold;
+    text-align: center;
+    color: white !important;
+    background-color: rgb(0, 188, 212);
+  }
+  
+  .cell:nth-child(2) {
+    color: rgb(64, 62, 62);
+  }
+  
+  .cell:nth-child(3) {
+    color: rgb(64, 62, 62);
+  }
+  
+  .cell:nth-child(4) {
+    color: rgb(64, 62, 62);
+  }
+  
+  /* Icon styles */
+  .icon {
+    font-size: 4rem;
+    color: rgb(155, 76, 228);
+    margin-bottom: 0.5rem;
+  }
+  
+  .icon1 {
+    font-size: 4rem;
+    color: rgb(79, 103, 225);
+    margin-bottom: 0.5rem;
+  }
+  
+  .icon2 {
+    font-size: 4rem;
+    color: rgb(0, 188, 212);
+    margin-bottom: 0.5rem;
+  }
+  
+  .first {
+    background-color: rgb(255, 222, 151);
+  }
+  
+  /* Responsive design */
+  @media screen and (max-width: 1024px) {
+    .table {
+      width: 100%;
+    }
+    .heading {
+      font-size: 1.25rem;
+    }
+    .cell {
+      padding: 0.8rem;
+    }
+    .icon, .icon1, .icon2 {
+      font-size: 3.5rem;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .table {
+      display: block;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .heading {
+      font-size: 1.2rem;
+    }
+    .cell {
+      font-size: 0.9rem;
+      padding: 0.6rem;
+    }
+    .icon, .icon1, .icon2 {
+      font-size: 3rem;
+    }
+  }
+  
+  @media screen and (max-width: 480px) {
+    .table {
+      display: block;
+      border: none;
+      overflow-x: auto;
+      white-space: nowrap;
+    }
+    .row {
+      display: block;
+      margin-bottom: 1rem;
+    }
+    .cell {
+      display: block;
+      width: 100%;
+      text-align: left;
+      border: none;
+      border-bottom: 1px solid #ddd;
+      padding: 0.5rem;
+    }
+    .header, .header1, .header2 {
+      text-align: left;
+      font-size: 1rem;
+    }
+    .icon, .icon1, .icon2 {
+      font-size: 2.5rem;
+    }
+  }
+  

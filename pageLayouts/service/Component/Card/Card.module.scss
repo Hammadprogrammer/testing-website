@@ -1,0 +1,68 @@
+.card {
+  width: 100%; /* Set the width to 100% for responsiveness */
+  max-width: 350px; /* Maximum width to prevent it from becoming too large */
+  height: 400px; /* Fixed height for the card */
+  margin-top: 80px;
+  margin-left: 10px;
+  overflow: hidden;
+  flex-direction: column; /* Stack elements vertically */
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0, 0, 0, 0.2); /* Enhanced box-shadow for better effect */
+  border-radius: 8px; /* Rounded corners for a nicer look */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for transform and box-shadow */
+
+  /* For responsive design */
+  @media (max-width: 768px) {
+    width: 100%; /* Allow full width for small screens */
+    margin-left: 0; /* Remove left margin on small screens */
+  }
+
+  &:hover {
+    transform: translateY(-10px); /* Moves the card up by 10px on hover */
+    box-shadow: 0 4px 25px rgba(0, 0, 0, 0.2); /* Increase the shadow on hover */
+  }
+}
+
+.cardImage {
+  width: 100%; /* Image takes up full width of the card */
+  height: 50%; /* Image takes up half of the card's height */
+  object-fit: cover; /* Ensures image fills the area without stretching */
+}
+
+.cardContent {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+  justify-content: center; /* Center the content vertically */
+  align-items: center; /* Center the content horizontally */
+  padding: 1rem;
+  height: 50%; /* Content takes up the remaining 50% of the card's height */
+  text-align: center; /* Ensures the text is centered */
+}
+
+.cardTitle {
+  font-size: 21px; /* Slightly smaller font size */
+  font-weight: normal;
+  color: #333;
+  font-family:  Arial,  sans-serif;
+}
+
+.cardDescription {
+  font-size: 13px; /* Adjusted description font size */
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.btn {
+  background-color: #ffffff; /* Button background color */
+  color: rgb(0, 0, 0); /* Button text color */
+  border: 1px solid black;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 1rem;
+  
+  &:hover {
+    background-color: #0056b3; /* Darker button on hover */
+  }
+}

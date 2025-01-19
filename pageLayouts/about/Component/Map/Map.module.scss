@@ -1,0 +1,52 @@
+/* styles/Map.module.scss */
+$primary-color: #0070f3;
+$map-width: 80%; /* Make the width 100% to take up the full width of the container */
+$map-height: 500px; /* Default height */
+$border-radius: 8px;
+
+.mapContainer {
+  padding-top: 20px;
+  padding-bottom: 40px;
+  text-align: center;
+  background-color: white;
+  margin: 0 auto; /* Center the container */
+}
+
+.iframe {
+  width: $map-width;
+  height: $map-height;
+  border: 0;
+  border-radius: $border-radius;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  max-width: 100%;
+}
+
+.iframe:hover {
+  transform: scale(1.05);
+}
+
+/* Media Queries for different screen sizes */
+@media (max-width: 1200px) {
+  .iframe {
+    height: 450px; /* Reduce the height on medium-sized screens */
+  }
+}
+
+@media (max-width: 992px) {
+  .iframe {
+    height: 400px; /* Further reduce the height for small to medium screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .iframe {
+    height: 350px; /* Adjust the height for tablets */
+  }
+}
+
+@media (max-width: 576px) {
+  .iframe {
+    height: 300px; /* Adjust the height for small mobile screens */
+  }
+}

@@ -1,0 +1,90 @@
+.navbar {
+  margin-top: 50px;
+  width: 100%;
+  height: 20vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #fff; /* White text for better visibility */
+  text-align: center;
+}
+
+.brand {
+  font-size: 40px;
+  margin-top: 6rem;
+  font-weight: normal;
+  padding: 2px;
+  letter-spacing: 5px; /* Increased spacing between letters */
+  font-family: sans-serif, Arial; /* Defined fallback fonts */
+}
+
+.links {
+  display: flex; /* Flexbox for link layout */
+  gap: 0.3rem; /* Space between links */
+  justify-content: center; /* Center the links */
+}
+
+.home, .service {
+  justify-content: center;
+  margin-bottom: 70px;
+  text-decoration: none; /* Removes underline */
+}
+
+.home {
+  color: #ffffff; /* White color for "Home" link */
+}
+
+.service {
+  color: #ddf485; /* Greenish color for "Service" link */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar {
+    height: 30vh;
+    padding-top: 10px;
+  }
+  .brand {
+    font-size: 1.8rem;
+    margin-top: 2.5rem;
+  }
+  .links {
+    flex-direction: row; /* Ensure links remain in a row layout */
+    gap: 1rem; /* Increase spacing between links */
+  }
+  .home, .service {
+    font-size: 0.9rem; /* Adjusted font size for smaller screens */
+    margin-top: 0; /* Remove extra spacing */
+    text-decoration: none; /* Ensure underline is removed */
+  }
+}
+
+@media (max-width: 576px) {
+  .navbar {
+    height: 20vh;
+  }
+  .brand {
+    font-size: 1.5rem;
+    margin-top: 2rem;
+  }
+  .home, .service {
+    font-size: 0.8rem;
+  }
+}
+
+// @media (max-width: 480px) {
+//   .navbar {
+//     height: 25vh;
+//   }
+//   .brand {
+//     font-size: 1.3rem;
+//     margin-top: 1.5rem;
+//   }
+//   .home, .service {
+//     font-size: 0.7rem;
+//   }
+// }

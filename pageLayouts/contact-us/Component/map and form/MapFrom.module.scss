@@ -1,0 +1,136 @@
+$primary-color: #1375ad;
+$border-radius: 12px;
+
+.mapPage {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 60px;
+  background-color: #f7f8fa;
+  margin: 0 auto;
+  gap: 30px;
+
+  @media (max-width: 768px) {
+    flex-direction: column; /* Stack elements vertically */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+.mapSection {
+  flex: 2;
+  min-width: 300px;
+  border-radius: $border-radius;
+  padding: 10px;
+
+  @media (max-width: 768px) {
+    flex: none;
+    width: 100%; /* Full width */
+  }
+}
+
+.mapIframe {
+  width: 100%;
+  height: 480px;
+  border: 0;
+  border-radius: $border-radius;
+  transition: transform 0.3s ease-in-out;
+}
+
+.formSection {
+  flex: 1;
+  min-width: 300px;
+  padding: 30px;
+  border-radius: $border-radius;
+
+  @media (max-width: 768px) {
+    flex: none;
+    width: 100%; /* Full width */
+    padding: 20px; /* Adjust padding for smaller screens */
+  }
+}
+
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+.inputWithIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.formInput {
+  width: 100%;
+  padding: 15px 50px 15px 20px;
+  background-color: white; /* Set input background to white */
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  font-size: 16px;
+}
+
+.formInput:focus {
+  border-color: $primary-color;
+  outline: none;
+}
+
+.formTextarea {
+  width: 100%;
+  padding: 20px;
+  background-color: white; /* Set message box background to white */
+  border: 1px solid #ccc;
+  border-radius: $border-radius;
+  font-size: 16px;
+}
+
+.formTextarea:focus {
+  border-color: $primary-color;
+  outline: none;
+}
+
+.icon {
+  position: absolute;
+  right: 15px;
+  color: #aaa;
+  font-size: 22px;
+}
+
+.submitButton {
+  background-color: $primary-color;
+  color: white;
+  border: none;
+  border-radius: $border-radius;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 20px;
+  width: 100%;
+  transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.submitButton:hover {
+  background-color: darken($primary-color, 10%);
+  transform: scale(1.05); /* Slight enlarge on hover */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .mapPage {
+    flex-direction: column; /* Stack elements vertically */
+    gap: 20px; /* Adjust spacing between sections */
+  }
+
+  .mapSection {
+    width: 100%; /* Map takes full width */
+  }
+
+  .formSection {
+    width: 100%; /* Form takes full width */
+  }
+}

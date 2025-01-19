@@ -1,0 +1,68 @@
+.container {
+    padding: 20px;
+    font-family: 'Arial', sans-serif; /* Changed to sans-serif font */
+  }
+  
+  .image {
+    width: 50vw; /* Set image width to 50% of the viewport width */
+    height: auto;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; /* Center the image horizontally */
+  }
+  
+  .jobDescription {
+    padding: 20px;
+    border-radius: 10px;
+    font-family: 'Arial', sans-serif;
+  }
+  
+  .jobDescription h1,
+  .jobDescription h2 {
+    font-size: 18px;
+    color: #000000;
+    line-height: 80px;
+  }
+  
+  .jobDescription ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  .jobDescription p,
+  .jobDescription li {
+    font-size: 16px;
+    color: #000000;
+    line-height: 40px;
+  }
+  
+  .jobDescription .highlight {
+    color: #000000;
+    font-weight: bold;
+  }
+  
+  .jobDescription .label {
+    font-weight: bold;
+  }
+  
+  .jobDescription a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .jobDescription a:hover {
+    text-decoration: underline;
+  }
+  
+  .jobText {
+    color: #000000;
+    line-height: 1.6;
+  }
+  
+  .jobDescription span {
+    font-weight: normal;
+    color: #000000;
+    line-height: 1.5;
+  }
+  
